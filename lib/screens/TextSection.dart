@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:fundamental_flutter/style.dart';
 
 class TextSection extends StatelessWidget {
   // final Color _color;
   final String _title;
   final String _body;
-  static const double _hPad = 16.0; // pixel
+  static const double _hPad = 14.0; // pixel
 
   TextSection(this._title, this._body);
 
@@ -19,14 +20,18 @@ class TextSection extends StatelessWidget {
 
         children: [
           Container(
-            // padding với thứ tự: LEFT-TOP-RIGHT-BOTTOM
-            padding: const EdgeInsets.fromLTRB(_hPad, 32.0, _hPad, 4.0),
-            child: Text(this._title)
-          ),
+              // padding với thứ tự: LEFT-TOP-RIGHT-BOTTOM
+              padding: const EdgeInsets.fromLTRB(_hPad, 24.0, _hPad, 4.0),
+              child: Text(
+                this._title,
+                style: TitleTextStyle,
+              )),
           Container(
-            padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, _hPad),
-            child: Text(this._body)
-          ),
+              padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, 4.5),
+              child: Text(
+                this._body,
+                style: Body1TextStyle,
+              )),
         ]);
   }
 }

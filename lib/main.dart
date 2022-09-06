@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fundamental_flutter/screens/location_details.dart';
+import 'package:fundamental_flutter/style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +12,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LocationDetail(),
-    );
+        title: 'Flutter Demo', home: LocationDetail(), theme: ThemeData());
   }
 }
