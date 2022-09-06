@@ -15,9 +15,9 @@ class LocationDetail extends StatelessWidget {
             //whole section from left to right
             children: [
               ImageBanner("assets/images/ruong-bac-thang.jpg"),
-              TextSection(Colors.red),
-              TextSection(Colors.blue),
-              TextSection(Colors.green),
+              TextSection("Title1", "Body1"),
+              TextSection("Title2", "Body2"),
+              TextSection("Title3", "Body3"),
             ]));
   }
 }
