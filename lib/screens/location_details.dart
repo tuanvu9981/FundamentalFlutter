@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fundamental_flutter/screens/ImageBanner.dart';
 import 'package:fundamental_flutter/screens/TextSection.dart';
 
 class LocationDetail extends StatelessWidget {
@@ -13,6 +14,7 @@ class LocationDetail extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             //whole section from left to right
             children: [
+              ImageBanner("assets/images/ruong-bac-thang.jpg"),
               TextSection(Colors.red),
               TextSection(Colors.blue),
               TextSection(Colors.green),
