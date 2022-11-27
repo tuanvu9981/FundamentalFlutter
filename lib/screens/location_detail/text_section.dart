@@ -22,15 +22,13 @@ class TextSection extends StatelessWidget {
           Container(
               // padding với thứ tự: LEFT-TOP-RIGHT-BOTTOM
               padding: const EdgeInsets.fromLTRB(_hPad, 24.0, _hPad, 4.0),
-              child: Text(
-                this._title,
-                style: TitleTextStyle,
-              )),
+              child: Text(this._title,
+                  style: Theme.of(context).textTheme.titleLarge)),
           Container(
               padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, 4.5),
               child: Text(
                 this._body,
-                style: Body1TextStyle,
+                style: Theme.of(context).textTheme.bodyText1,
               )),
         ]);
   }

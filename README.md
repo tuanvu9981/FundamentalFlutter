@@ -82,3 +82,6 @@ $ flutter devices
 ```
 $ flutter run
 ```
+
+### Linux VSCode commands
+- `Ctrl P`: move to already opened file
