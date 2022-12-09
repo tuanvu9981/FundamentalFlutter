@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fundamental_flutter/style.dart';
+import 'package:fundamental_flutter/style.dart';
 
 class TextSection extends StatelessWidget {
   // final Color _color;
@@ -22,13 +23,12 @@ class TextSection extends StatelessWidget {
           Container(
               // padding với thứ tự: LEFT-TOP-RIGHT-BOTTOM
               padding: const EdgeInsets.fromLTRB(_hPad, 24.0, _hPad, 4.0),
-              child: Text(this._title,
-                  style: Theme.of(context).textTheme.titleLarge)),
+              child: Text(this._title, style: TitleTextStyle)),
           Container(
               padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, 4.5),
               child: Text(
                 this._body,
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Body1TextStyle,
               )),
         ]);
   }

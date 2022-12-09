@@ -3,7 +3,7 @@ import 'package:fundamental_flutter/screens/location_detail/location_detail.dart
 import 'screens/locations/locations.dart';
 import 'screens/location_detail/location_detail.dart';
 import 'screens/not_found.dart';
-import 'style.dart';
+import 'package:fundamental_flutter/style.dart';
 
 const LocationsRoute = '/';
 const LocationDetailRoute = '/location_detail';
@@ -32,16 +32,20 @@ class App extends StatelessWidget {
   RouteFactory _routes() {
     return (RouteSettings settings) {
       Widget screen;
+      // print(settings.name);
 
       if (settings.name == LocationsRoute) {
         screen = Locations();
       } else {
         var uri = settings.name?.split('/');
-        if (uri?.length == 2 && uri?.first == LocationDetailRoute) {
-          screen = LocationDetail(int.parse(uri![1]));
+        // print(uri?[2]);
+
+        if (uri?.length == 3 && uri?[1] == "location_detail") {
+          screen = LocationDetail(int.parse(uri![2]));
+        } else {
+          screen = NotFound();
         }
       }
-      screen = NotFound();
 
       return MaterialPageRoute(builder: (BuildContext context) => screen);
     };
@@ -49,9 +53,8 @@ class App extends StatelessWidget {
 
   ThemeData _theme() {
     return ThemeData(
-        appBarTheme: const AppBarTheme(titleTextStyle: AppBarTextStyle),
-        textTheme:
-            TextTheme(titleLarge: TitleTextStyle, bodyText1: Body1TextStyle));
+      appBarTheme: const AppBarTheme(titleTextStyle: AppBarTextStyle),
+    );
   }
 
   @override
@@ -71,4 +74,7 @@ routes: {
 }
 
 --> But this still not compatible with automatically changed ID
+
+textTheme:
+            TextTheme(titleLarge: TitleTextStyle, bodyText1: Body1TextStyle)
 */

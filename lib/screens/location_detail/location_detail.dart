@@ -11,7 +11,7 @@ class LocationDetail extends StatelessWidget {
   LocationDetail(this._locationId);
 
   List<Widget> getTextSections(Location lctn) {
-    return lctn.facts.map((e) => TextSection(e.text, e.title)).toList();
+    return lctn.facts.map((e) => TextSection(e.title, e.text)).toList();
   }
 
   @override
@@ -23,7 +23,7 @@ class LocationDetail extends StatelessWidget {
           title: Text(location!.name),
         ),
         body: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             // whole section from left to right
             children: [

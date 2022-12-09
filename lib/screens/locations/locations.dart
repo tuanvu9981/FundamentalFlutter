@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../app.dart';
 import '../../models/location.dart';
+import 'selection.dart';
 
 class Locations extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class Locations extends StatelessWidget {
       body: ListView(
         children: locations
             .map((e) => GestureDetector(
-                  child: Text(e.name),
+                  child: Selection(e.name),
                   onTap: () => _onLocationTap(context, e.id),
                 ))
             .toList(),
