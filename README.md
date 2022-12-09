@@ -4,14 +4,31 @@ A new Flutter project.
 
 ### Some images
 <p align="center">
-
-  <img src="https://github.com/tuanvu9981/FundamentalFlutter/blob/master/app_images/img1_all.jpg" width="100%" />
-  <br />
-
-  <img src="https://github.com/tuanvu9981/FundamentalFlutter/blob/master/app_images/img2_bana.jpg" width="100%" />
-  <br />
-
-  <img src="https://github.com/tuanvu9981/FundamentalFlutter/blob/master/app_images/img3_hue.jpg" width="100%" />
+    <table>
+    <tr>
+        <td>
+            <img 
+                src="https://github.com/tuanvu9981/FundamentalFlutter/blob/master/app_images/img1_all.jpg" 
+                width=270 
+                height=480
+            >
+        </td>
+        <td>
+            <img 
+                src="https://github.com/tuanvu9981/FundamentalFlutter/blob/master/app_images/img2_bana.jpg" 
+                width=270 
+                height=480
+            >
+        </td>
+        <td>
+            <img 
+                src="https://github.com/tuanvu9981/FundamentalFlutter/blob/master/app_images/img3_hue.jpg" 
+                width=270 
+                height=480
+            >
+        </td>
+    </tr>
+    </table>
   <br />
 
 </p>
